@@ -1,30 +1,31 @@
 import React from "react";
-// import { Link } from 'react-router-dom'
 import { Container, Row, Col } from "reactstrap";
 import textbottom from "../../assets/img/textbottom.png";
 import Abotimg from "../../assets/img/abot.png";
 import About from "../astrology/kundalimatch/AboutUs";
 import Services from "../services/ServicesHome";
+import LayoutOne from "../../layouts/LayoutOne";
 
 class AboutUs extends React.Component {
   render() {
     return (
-      <div className="col-lg-12 col-md-12 mb-30">
-        <div className="category-home">
-          <section>
-            <Container>
-              <div className="p-3 d-flex justify-content-center">
-                <h2>About Us</h2>
-                {/* <img src={textbottom} alt="" className="sb-img" /> */}
-              </div>
-              <Row>
-                <About />
-              </Row>
-              <Row>
-                <Services />
-              </Row>
+      <LayoutOne headerTop="visible">
+        <div className="col-lg-12 col-md-12 mb-30">
+          <div className="category-home">
+            <section>
+              <Container>
+                <div className="p-3 d-flex justify-content-center">
+                  <h2>About Us</h2>
+                  {/* <img src={textbottom} alt="" className="sb-img" /> */}
+                </div>
+                <Row>
+                  <About />
+                </Row>
+                <Row>
+                  <Services />
+                </Row>
 
-              {/* <Row>
+                {/* <Row>
                 <Col lg="6">
                   <div>
                     <img
@@ -54,10 +55,11 @@ class AboutUs extends React.Component {
                   </div>
                 </Col>
               </Row> */}
-            </Container>
-          </section>
+              </Container>
+            </section>
+          </div>
         </div>
-      </div>
+      </LayoutOne>
     );
   }
 }

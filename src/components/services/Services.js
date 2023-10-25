@@ -6,16 +6,14 @@ import textbottom from "../../assets/img/textbottom.png";
 import computer from "../../assets/img/computer.png";
 import "../../assets/scss/workflow.css";
 import "../../assets/scss/main.css";
-import { GrPersonalComputer } from 'react-icons/gr';
-import SectionPooja from '../astrology/sectionpooja';
+import { GrPersonalComputer } from "react-icons/gr";
+import SectionPooja from "../astrology/sectionpooja";
 import Testimonials from "./Testimonials";
 export default function Services() {
   return (
     <LayoutOne headerTop="visible">
       <section className="pt-0 pb-0 " style={{ backgroundColor: "#191a1f" }}>
-        <div
-          className=""
-        >
+        <div className="">
           <Container className="py-5">
             <div className="d-flex  justify-content-between">
               <div className="">
@@ -26,7 +24,7 @@ export default function Services() {
                   href="#"
                   className="text-white elementor-button elementor-button-link elementor-size-md"
                 >
-                  All Servicesgit 
+                  All Servicesgit
                 </a>
               </div>
             </div>
@@ -111,21 +109,23 @@ export default function Services() {
                 </Row>
               </Col>
             </Row>
-            </Container>
-</div>
+          </Container>
+        </div>
       </section>
       <section className="mb-4 mt-3">
-        <Row>
-          <Col>
-            <div className="d-flex justify-content-center mt-4 mb-2">
-              <h5>TESTIMONIALS</h5>
-            </div>
-            <div className="d-flex justify-content-center mb-2">
-              <h2>What they say</h2>
-            </div>
-            <Testimonials />
-          </Col>
-        </Row>
+        <Container>
+          <Row>
+            <Col>
+              <div className="d-flex justify-content-center mt-4 mb-2">
+                <h5>TESTIMONIALS</h5>
+              </div>
+              <div className="d-flex justify-content-center mb-2">
+                <h2>What they say</h2>
+              </div>
+              <Testimonials />
+            </Col>
+          </Row>
+        </Container>
       </section>
     </LayoutOne>
   );
