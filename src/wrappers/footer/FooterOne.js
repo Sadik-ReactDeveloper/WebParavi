@@ -346,7 +346,7 @@ const FooterOne = ({
                       </Link>
                     </li>
                     <li>
-                      <Link to={process.env.PUBLIC_URL + "/kundaliform"}>
+                      <Link to={process.env.PUBLIC_URL + "/aboutUs"}>
                         Match Making
                       </Link>
                     </li>

@@ -380,7 +380,7 @@ const Checkout = lazy(() => import("./pages/other/Checkout"));
 
 const NotFound = lazy(() => import("./pages/other/NotFound"));
 
-const App = (props) => {
+const App = props => {
   useEffect(() => {
     props.dispatch(
       loadLanguages({
@@ -461,7 +461,7 @@ const App = (props) => {
                   />
                   <Route
                     path={process.env.PUBLIC_URL + "/shop-list-standard/:_id"}
-                    render={(routeProps) => (
+                    render={routeProps => (
                       <Product
                         {...routeProps}
                         key={routeProps.match.params._id}
@@ -480,7 +480,7 @@ const App = (props) => {
                   {/* Shop product pages */}
                   <Route
                     path={process.env.PUBLIC_URL + "/product/:id"}
-                    render={(routeProps) => (
+                    render={routeProps => (
                       <Product
                         {...routeProps}
                         key={routeProps.match.params.id}
@@ -981,7 +981,7 @@ const App = (props) => {
                     component={DemoChat}
                   />
                   <Route
-                    path={process.env.PUBLIC_URL + "/kundaliform"}
+                    path={process.env.PUBLIC_URL + "/aboutUs"}
                     component={KundaliForm}
                   />
                   <Route

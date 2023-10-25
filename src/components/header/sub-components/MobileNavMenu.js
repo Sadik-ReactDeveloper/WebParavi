@@ -155,7 +155,7 @@ const MobileNavMenu = ({ strings }) => {
         </li>
 
         <li>
-          <Link to="/kundaliform">Kundli Matching</Link>
+          <Link to="/aboutUs">Kundli Matching</Link>
         </li>
 
         <li>

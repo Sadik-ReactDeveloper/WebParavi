@@ -38,7 +38,7 @@ class OurService extends React.Component {
                   </Col>
                   <Col md="2">
                     <div className="serve-1">
-                      <Link to="/kundaliform">
+                      <Link to="/aboutUs">
                         <h3> Match Making</h3>
                         <p>
                           Kundali Match Making is an important consideration...

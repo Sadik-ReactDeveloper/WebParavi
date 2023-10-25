@@ -37,7 +37,7 @@ const NavMenu = ({ strings, menuWhiteClass, sidebarMenu }) => {
           </li>
 
           <li>
-            <Link to="/kundaliform">About Us</Link>
+            <Link to="/aboutUs">About Us</Link>
           </li>
 
           {/* <li>
